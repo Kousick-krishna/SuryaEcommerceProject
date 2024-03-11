@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ShoppingCart = ({ isOpen, selectedProduct, handleCloseCartPanel }) => {
+export const ShoppingCart = ({ isOpen, selectedProduct, handleCloseCartPanel }) => {
   return (
     <div className={`fixed top-0 right-0 h-full bg-white z-50 overflow-y-auto ${isOpen ? 'w-72' : 'w-0'} transition-all duration-300 ease-in-out`}>
       <div className="p-4">
@@ -11,7 +11,7 @@ const ShoppingCart = ({ isOpen, selectedProduct, handleCloseCartPanel }) => {
         </button>
         {selectedProduct && (
           <div className="flex flex-col items-center">
-            <img src={selectedProduct.image} alt={selectedProduct.name} className="w-32 h-32 object-cover rounded-lg mb-4" />
+            <img src={selectedProduct.image} alt={selectedProduct.name} className="w-24 h-24 object-cover rounded-lg " />
             <p className="text-lg font-semibold">{selectedProduct.name}</p>
             <p className="text-gray-600">{selectedProduct.amount}</p>
             <div className="flex mt-4">
@@ -26,4 +26,4 @@ const ShoppingCart = ({ isOpen, selectedProduct, handleCloseCartPanel }) => {
   );
 };
 
-export default ShoppingCart;
+
