@@ -1,7 +1,7 @@
 {
   "scripts": {
     "devStart": "nodemon index.js",
-    "build" : "npm run build"
+    "build" : "vite build"
   },
   "dependencies": {
     "cors": "^2.8.5",
