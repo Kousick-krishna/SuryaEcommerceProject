@@ -4,6 +4,6 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "npm build"
+    "build": "npm run build"
 }
 }
