@@ -26,7 +26,7 @@ export const Products = ({ handleAddToCart, searchInput }) => {
     }, [searchInput, data]);
 
     return (
-        <div className="grid grid-cols-4 gap-10 ml-10">
+        <div className="grid grid-cols-4 gap-10 ml-10 md:grid-cols-2 md:gap-8 sm:grid-cols-2 ">
             {filteredData.map(product => (
                 <div key={product.id} className='shadow-lg rounded-lg p-4 w-72 h-80 bg-gray-200 bg-opacity-50'>
                     <h3 className='ml-20 font-semibold'>{product.name}</h3>
