@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "devStart": "nodemon index.js"
+    "devStart": "nodemon index.js",
+    "build" : "npm build"
   },
   "dependencies": {
     "cors": "^2.8.5",
