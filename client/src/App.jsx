@@ -51,9 +51,11 @@ function App() {
         onClickCart={() => setShowCartPanel(true)} 
       />
       <Routes>
-        <Route path='/Signin' Component={Signin}></Route>
-        <Route path='/Signup' Component={SignUp}></Route>
+        <Route path='/Signin' element={<Signin />} />
+        <Route path='/Signup' element={<SignUp />} />
+
       </Routes>
+      </BrowserRouter>
       <div className="mt-24">
         <Products 
           handleAddToCart={handleAddToCart} 
@@ -70,7 +72,7 @@ function App() {
         count={count}
         
       /> 
-      </BrowserRouter>
+     
     </div>
   );
 }
