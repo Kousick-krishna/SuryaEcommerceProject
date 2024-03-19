@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: '../client/src/App.jsx', // Specify the output directory for the client build
+    outDir: '../client/dist', // Specify the output directory for the client build
     emptyOutDir: true, // Empty the output directory before building
     sourcemap: true, // Generate source maps
   },
