@@ -45,34 +45,31 @@ function App() {
   return (
     <div>
     <BrowserRouter>
+    
       <Navbar 
         cartCount={cartCount} 
         handleSearch={handleSearch} 
         onClickCart={() => setShowCartPanel(true)} 
       />
       <Routes>
+        <Route path='/' element={<>
+        <div className="mt-24">
+          <Products handleAddToCart={handleAddToCart} 
+          searchInput={searchInput} />
+        </div>
+          <ShoppingCart  
+          isOpen={showCartPanel} 
+          cartItems={cartItems} 
+          handleCloseCartPanel={handleCloseCartPanel} 
+          Add={Add}
+          Sub={Sub}
+          count={count}/>
+          </>
+        } />
         <Route path='/Signin' element={<Signin />} />
         <Route path='/Signup' element={<SignUp />} />
-
       </Routes>
       </BrowserRouter>
-      <div className="mt-24">
-        <Products 
-          handleAddToCart={handleAddToCart} 
-          searchInput={searchInput} 
-        />
-      </div>
-      
-      <ShoppingCart 
-        isOpen={showCartPanel} 
-        cartItems={cartItems} 
-        handleCloseCartPanel={handleCloseCartPanel} 
-        Add={Add}
-        Sub={Sub}
-        count={count}
-        
-      /> 
-     
     </div>
   );
 }
