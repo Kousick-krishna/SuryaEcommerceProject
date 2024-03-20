@@ -4,9 +4,9 @@
   },
   "scripts": {
     "build:client": "cd client && npm install && npm run build",
-    "build:server": "cd server && npm install && npm run build",
-    "start": "npm run build:client && npm run build:server"
+    "start": "cd client && npm start"  
   }
+  
   
   
 }

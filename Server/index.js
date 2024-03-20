@@ -5,7 +5,9 @@ const app = express()
 const products = require('./models/Product')
 require('dotenv').config();
 const uri = process.env.MONGODB_URI;
-app.use(cors());
+app.use(cors({
+  origin: 'https://suryaupdated-g29f.vercel.app/' 
+}));
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to MongoDB');
