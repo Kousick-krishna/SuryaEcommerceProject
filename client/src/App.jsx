@@ -45,14 +45,13 @@ function App() {
   return (
     <div>
     <BrowserRouter>
-    
-      <Navbar 
+      <Routes>
+        <Route path='/' element={<>
+          <Navbar 
         cartCount={cartCount} 
         handleSearch={handleSearch} 
         onClickCart={() => setShowCartPanel(true)} 
       />
-      <Routes>
-        <Route path='/' element={<>
         <div className="mt-24">
           <Products handleAddToCart={handleAddToCart} 
           searchInput={searchInput} />

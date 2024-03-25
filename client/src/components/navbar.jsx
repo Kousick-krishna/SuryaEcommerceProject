@@ -5,7 +5,7 @@ export const Navbar = ({ cartCount,handleSearch,onClickCart}) => {
     <div>
        <nav className=" top-0 w-full bg-white shadow-lg p-6 flex ">
           <div>
-            <h6 className="lg:text-black lg:text-4xl lg:w-96 lg:ml-8 lg:p-2 md:text-xl  md:w-60 md:p-4 md:mt-2 sm:text-md sm:text-xl sm:mt-4"><Link to="/">Surya Electronics</Link></h6>
+            <h6 className="lg:text-black lg:text-4xl lg:w-96 lg:ml-8 lg:p-2 md:text-xl  md:w-60 md:p-4 md:mt-2 sm:text-md sm:text-xl sm:mt-4 sm:text-red-500"><Link to="/">Surya Electronics</Link></h6>
           </div>
           <div>
             <input 
